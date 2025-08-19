@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EuroTrans | Kontakt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Adresa, telefon i email. Stupite u kontakt sa EuroTrans timom za ponude i informacije." />
+    <meta name="keywords" content="EuroTrans, kontakt, adresa, telefon, e-mail, ponuda, upit, transport, špedicija">
+    <link rel="canonical" href="https://vasilije-hub.github.io/EuroTrans.github.io/contact.html" />
     <link rel="icon" type="image/jpg" href="assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,12 +65,24 @@
             <div class="prijava">
                 <h2>Povežite se s nama</h2>
                 <p>Imamo rešenja za svaki Vaš zahtev.</p>
-                <form>
-                    <input type="text" placeholder="Vaše Ime" required>
-                    <input type="text" placeholder="Vaše Prezime" required>
-                    <input type="email" placeholder="Vaša E-mail adresa" required>
-                    <textarea placeholder="Vaša Poruka" rows="4" required></textarea>
-                    <button type="submit">Pošalji poruku</button>
+               <form id="kontakt-form" class="kontakt-form" action="#" method="post" autocomplete="on">
+                    <div class="form-group">
+                        <label for="ime" class="form-label">Vaše ime*</label>
+                        <input id="ime" name="ime" class="form-control" type="text" placeholder="Vaše Ime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime" class="form-label">Vaše prezime*</label>
+                        <input id="prezime" name="prezime" class="form-control" type="text" placeholder="Vaše Prezime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Vaša e-mail adresa*</label>
+                        <input id="email" name="email" class="form-control" type="email" placeholder="Vaša E‑mail adresa" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="poruka" class="form-label">Vaša poruka*</label>
+                        <textarea id="poruka" name="poruka" class="form-control" rows="4" placeholder="Vaša Poruka" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Pošalji poruku</button>
                 </form>
             </div>
         </div>
@@ -82,6 +98,28 @@
                 <p>Svetog Save 134, Nova Varoš, Srbija</p>
                 <p>Telefon: (+381) 65 23455555</p>
                 <a href="mailto:info@eurotrans.com">Email:info@eurotrans.com</a>
+                                <ul class="social" aria-label="Društvene mreže">
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <nav class="footer-info">
                 <h3>Brzi Linkovi</h3>

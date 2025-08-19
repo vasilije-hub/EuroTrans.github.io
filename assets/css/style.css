@@ -536,6 +536,14 @@ footer {
   max-width: 300px;
   margin: 10px;
 }
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-right: 65px;
+}
 
 .footer-info h3 {
   font-size: 24px;
@@ -671,6 +679,10 @@ footer {
   transition: box-shadow 0.3s ease;
   margin-left: 25px;
   margin-top: 20px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+
 }
 .prica-slika img:hover {
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
@@ -780,6 +792,7 @@ footer {
 }
 #glavni-1{
   width:100%;
+  height: 840px;
 }
 .kolone-kontakt h2{
   text-align: center;
@@ -845,29 +858,44 @@ footer {
 .prijava button:hover {
   background-color: #dc5602;
 }
+.form-label {
+  font-size: 15px;
+  float: left;
+  margin-left: 12px;
+}
 #glavni{
   width:100%;
-  height: 100vh;
+  height: 100vh
+}
+#glavni-2{
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#f5f5f5;
 }
 .o-autoru{
-  width: 80%;
-  height: 530px;
+  height: 600px;
   display: flex;
   margin: 0px auto;
   justify-content: space-around;
-  margin-top: 50px;
 }
 .o-autoru-sl{
-  width: 50%;
+  margin-left: 180px;
   height: 500px;
+  width: 20%;
+  margin-top: 50px;
   animation-name: slideIn;
   opacity: 0;
   animation: slideIn 1.5s ease-out forwards;
 }
 .o-autoru-tx{
-  width: 50%;
   height: 500px;
+  width: 40%;
+  margin-right: 180px;
   border-radius: 5px;
+  margin-top: 50px;
   border: 2px solid #4d148c;
   background-color: #e7e6e6;
   animation-name: slideIn;
@@ -882,13 +910,10 @@ footer {
 .o-autoru-sl img{
   height: 500px;
   border-radius: 10px;
-  margin-left: 200px;
   box-shadow: -15px 5px 5px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease;
 }
 .o-autoru-tx h2{
   color: #ff6200;
   margin-left: 5px;
-}
-#glavni-2{
 }
